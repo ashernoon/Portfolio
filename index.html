@@ -4,316 +4,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | QA Professional</title>
-    <meta name="description" content="Professional portfolio for QA Engineer and IT support roles.">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Custom Styles -->
+    <title>Asher Noon Livera | QA Engineer</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+<body>
+    <!-- Background Elements -->
+    <div class="mesh-bg"></div>
+    <div class="glow-spot" style="top: 10%; right: 10%;"></div>
+    <div class="glow-spot" style="bottom: 20%; left: 5%;"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Port<span class="text-accent">folio</span>.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">ASHER<span>NOON</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-outline" style="padding: 10px 20px; font-size: 14px;">Hire Me</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Content -->
     <main>
-
-        <!-- STEP 1: HOME / HERO SECTION -->
-        <section id="home" class="min-vh-100 d-flex align-items-center pt-5 bg-hero-gradient">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
             <div class="container">
-                <div class="row align-items-center">
-
-                    <!-- Profile Photo (Right on Desktop, Top on Mobile) -->
-                    <div class="col-lg-5 text-center mb-5 mb-lg-0 order-lg-last">
-                        <div class="position-relative d-inline-block">
-                            <!-- Glow effect -->
-                            <span
-                                class="position-absolute top-50 start-50 translate-middle bg-accent opacity-25 rounded-circle"
-                                style="width: 300px; height: 300px; filter: blur(50px); z-index: -1;"></span>
-                            <img src="assets/profilePhoto/profilePhoto.jpg" alt="Profile Photo"
-                                class="rounded-circle shadow-lg border border-secondary p-1 bg-white"
-                                style="width: 280px; height: 280px; object-fit: cover;">
-                        </div>
-                    </div>
-
-                    <!-- Text Content (Left on Desktop, Bottom on Mobile) -->
-                    <div class="col-lg-7 text-center text-lg-start p-lg-5" style="z-index: 2;">
-                        <span class="text-accent fw-bold text-uppercase ls-1">Hello, I'm</span>
-                        <h1 class="display-3 fw-bold my-2 text-white">Asher</h1>
-                        <h2 class="h3 text-info-subtle mb-4">Associate QA Engineer | IT Professional</h2>
-                        <p class="lead text-light mb-4 text-opacity-75" style="max-width: 600px;">
-                            Detail-oriented QA professional with a strong background in manual testing, POS systems, and
-                            IT management.
-                            Dedicated to ensuring software quality and system reliability.
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="hero-tag fade-in">Available for new opportunities</span>
+                        <h1 class="fade-in" style="animation-delay: 0.1s;">
+                            Ensuring <span class="text-gradient fw-black">Quality</span><br>
+                            In Every Pixel.
+                        </h1>
+                        <p class="hero-p fade-in" style="animation-delay: 0.2s;">
+                            Associate QA Engineer specializing in automated testing and system reliability.
+                            I bridge the gap between complex development and flawless user experiences.
                         </p>
+                        <div class="d-flex gap-3 fade-in" style="animation-delay: 0.3s; display: flex; gap: 16px;">
+                            <a href="#projects" class="btn btn-glow">View My Work</a>
+                            <a href="assets/cv/Asher CV.pdf" class="btn btn-outline" download>Download CV</a>
+                        </div>
+                    </div>
+                    <!-- Abstract Visual Support -->
+                    <div class="hero-visual fade-in" style="animation-delay: 0.4s;">
+                        <div class="glass-card" style="padding: 60px; text-align: center; position: relative;">
+                            <div style="font-size: 80px; filter: drop-shadow(0 0 20px var(--accent-glow));">
+                                <i class="bi bi-shield-check text-gradient"></i>
+                            </div>
+                            <h3 style="margin-top: 20px;">QA Excellence</h3>
+                            <p style="color: var(--text-muted); font-size: 14px;">Manual & Automation Specialist</p>
+                            <!-- Decorative Circle -->
+                            <div
+                                style="position: absolute; width: 100%; height: 100%; top:0; left:0; border: 1px dashed var(--border-accent); border-radius: 50%; transform: scale(1.2); opacity: 0.2;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <!-- Quick Summary Box -->
-                        <div class="summary-box p-4 rounded mb-5 text-start border-start border-4 border-accent bg-white bg-opacity-10 backdrop-blur"
-                            style="border: none;">
-                            <p class="mb-0 text-light">
-                                <strong class="text-white">Professional Summary:</strong>
-                                Experienced in manual testing, bug tracking, and effectively managing POS/Management
-                                systems.
-                                Passionate about transitioning into full-time QA & IT roles, utilizing strong
-                                analytical skills to drive quality.
+        <!-- About / Summary Section -->
+        <section id="about" data-reveal>
+            <div class="container">
+                <div class="glass-card">
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center;">
+                        <div>
+                            <h2 class="h1">About <span class="text-gradient">Me</span></h2>
+                            <p class="text-secondary" style="margin-top: 20px;">
+                                Based in Negombo, Sri Lanka, I have built a career dedicated to the art of software
+                                testing.
+                                From retail POS systems to complex ISP portals, my mission is to break things so that
+                                users don't have to.
                             </p>
                         </div>
-
-                        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                            <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-lg">View Projects</a>
-                            <a href="assets/cv/Asher CV.pdf" class="btn btn-outline-light btn-lg px-4" download>Download
-                                CV</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- STEP 2: CORE EXPERTISE SECTION (White BG) -->
-        <section id="expertise" class="py-5 bg-surface">
-            <div class="container py-5">
-                <h2 class="display-6 fw-bold text-center mb-5 text-dark"><span class="text-gradient">Core
-                        Expertise</span></h2>
-                <div class="row g-4 text-center">
-                    <!-- Card 1 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-search"></i></div>
-                            <h3 class="h5 text-dark">Manual Testing</h3>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-file-earmark-text"></i></div>
-                            <h3 class="h5 text-dark">Test Case Design</h3>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-bug"></i></div>
-                            <h3 class="h5 text-dark">Bug Tracking</h3>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-laptop"></i></div>
-                            <h3 class="h5 text-dark">Web Applications</h3>
-                        </div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-database"></i></div>
-                            <h3 class="h5 text-dark">Database Systems</h3>
-                        </div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card h-100 bg-white border border-light-subtle shadow-sm hover-lift p-4">
-                            <div class="display-5 text-accent mb-3"><i class="bi bi-link-45deg"></i></div>
-                            <h3 class="h5 text-dark">API Testing</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div
+                                style="padding: 20px; border: 1px solid var(--border-glass); border-radius: var(--radius-md);">
+                                <h4 class="text-gradient">BSc (Hons) in Information Technology</h4>
+                                <p class="text-muted" style="font-size: 13px;">SLIIT Graduate (2025)</p>
+                            </div>
+                            <div
+                                style="padding: 20px; border: 1px solid var(--border-glass); border-radius: var(--radius-md);">
+                                <h4 class="text-gradient">Work Experience</h4>
+                                <p class="text-muted" style="font-size: 13px;">Pixzarloop & SLT</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- STEP 3: CAREER FOCUS SECTION -->
-        <section class="py-5 bg-pattern">
-            <div class="container py-4 text-center">
-                <h2 class="h4 text-gradient mb-4 uppercase ls-1">Career Focus</h2>
-                <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-4">
-                    <span class="h4 text-main mb-0 fw-bold">QA Engineer</span>
-                    <span class="text-accent h4 mb-0 d-none d-md-inline">•</span>
-                    <span class="h4 text-main mb-0 fw-bold">IT Support / IT Officer</span>
-                    <span class="text-accent h4 mb-0 d-none d-md-inline">•</span>
-                    <span class="h4 text-main mb-0 fw-bold">Junior IT Engineer</span>
+        <!-- Work Projects -->
+        <section id="projects" data-reveal>
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span class="hero-tag">Portfolio</span>
+                    <h2 class="h1">Professional <span class="text-gradient">Impact</span></h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-card">
+                        <span class="project-tag">Pixzarloop</span>
+                        <h3 style="margin: 15px 0;">POS System Enhancement</h3>
+                        <p class="text-secondary" style="font-size: 14px; margin-bottom: 20px;">
+                            Full-cycle manual testing for retail management software, focusing on workflow integrity and
+                            performance.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span class="project-tag">Manual</span>
+                            <span class="project-tag">POS</span>
+                            <span class="project-tag">UAT</span>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="glass-card">
+                        <span class="project-tag">Sri Lanka Telecom</span>
+                        <h3 style="margin: 15px 0;">API Automation Suite</h3>
+                        <p class="text-secondary" style="font-size: 14px; margin-bottom: 20px;">
+                            Automated testing for mySLT portal using RestAssured, reducing manual overhead by 70%.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span class="project-tag">RestAssured</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">TestNG</span>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="glass-card">
+                        <span class="project-tag">Sri Lanka Telecom</span>
+                        <h3 style="margin: 15px 0;">Web App Automation</h3>
+                        <p class="text-secondary" style="font-size: 14px; margin-bottom: 20px;">
+                            Developed Selenium-Python frameworks for high-traffic enterprise applications.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">QA</span>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="glass-card">
+                        <span class="project-tag">Pixzarloop</span>
+                        <h3 style="margin: 15px 0;">Internal Management Systems</h3>
+                        <p class="text-secondary" style="font-size: 14px; margin-bottom: 20px;">
+                            Targeted testing for internal operations software, ensuring seamless data flow between
+                            departments.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span class="project-tag">ERP Testing</span>
+                            <span class="project-tag">Stability</span>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="glass-card">
+                        <span class="project-tag">Pixzarloop</span>
+                        <h3 style="margin: 15px 0;">Web & Admin Panels</h3>
+                        <p class="text-secondary" style="font-size: 14px; margin-bottom: 20px;">
+                            Execution of manual tests across various dynamic websites and complex admin dashboards.
+                        </p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">Cross-Browser</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- STEP 4: PROJECTS SECTION (White BG) -->
-        <section id="projects" class="py-5 bg-surface">
-            <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="display-6 fw-bold text-dark"><span class="text-gradient">Projects & Case Studies</span>
+        <!-- Experience Timeline Section -->
+        <section id="experience" data-reveal>
+            <div class="container">
+                <div style="margin-bottom: 60px;">
+                    <span class="hero-tag">Career Journey</span>
+                    <h2 class="h1">Professional <span class="text-gradient">Timeline</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="glass-card">
+                            <span class="project-tag">Present</span>
+                            <h3 style="margin: 10px 0;">Associate Quality Assurance Engineer</h3>
+                            <h4 class="text-gradient" style="font-size: 16px; margin-bottom: 15px;">Pixzarloop (Pvt)
+                                Ltd, Negombo</h4>
+                            <p class="text-muted" style="font-size: 13px; margin-bottom: 15px;">Jul 2025 - Present</p>
+                            <ul style="color: var(--text-secondary); font-size: 14px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">Mastering end-to-end manual testing for retail POS and
+                                    dynamic management systems.</li>
+                                <li style="margin-bottom: 8px;">Driving stability through focused regression and UAT
+                                    cycles.</li>
+                                <li style="margin-bottom: 8px;">Conducting performance audits using JMeter.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="glass-card">
+                            <h3 style="margin: 10px 0;">Software Quality Assurance Intern</h3>
+                            <h4 class="text-gradient" style="font-size: 16px; margin-bottom: 15px;">Pixzarloop (Pvt) Ltd
+                            </h4>
+                            <p class="text-muted" style="font-size: 13px; margin-bottom: 15px;">Jan 2025 - Jul 2025</p>
+                            <ul style="color: var(--text-secondary); font-size: 14px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">Validated functional requirements for complex admin
+                                    panels.</li>
+                                <li style="margin-bottom: 8px;">Collaborated with developers to streamline defect
+                                    resolution in Jira.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="glass-card">
+                            <h3 style="margin: 10px 0;">Software Quality Assurance Intern</h3>
+                            <h4 class="text-gradient" style="font-size: 16px; margin-bottom: 15px;">Sri Lanka Telecom
+                            </h4>
+                            <p class="text-muted" style="font-size: 13px; margin-bottom: 15px;">Apr 2024 - Oct 2024</p>
+                            <ul style="color: var(--text-secondary); font-size: 14px; padding-left: 20px;">
+                                <li style="margin-bottom: 8px;">Pioneered REST API automation using RestAssured for the
+                                    mySLT portal.</li>
+                                <li style="margin-bottom: 8px;">Architected Selenium-based UI testing frameworks.</li>
+                                <li style="margin-bottom: 8px;">Ensured seamless service delivery for high-traffic ISP
+                                    services.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" data-reveal>
+            <div class="container">
+                <div style="margin-bottom: 60px;">
+                    <span class="hero-tag">Academic Background</span>
+                    <h2 class="h1">Academic <span class="text-gradient">Foundation</span></h2>
+                </div>
+                <div class="glass-card" style="border: 1px solid var(--border-accent);">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                        <div class="fade-in">
+                            <h3 class="text-gradient h4 mb-2">BSc (Hons) in Information Technology Specializing in IT</h3>
+                            <p class="text-primary fw-bold">Sri Lanka Institute of Information Technology</p>
+                            <p class="text-muted" style="font-size: 14px;">2021 - 2025</p>
+                            <p class="text-secondary mt-3" style="font-size: 14px;">Focused on Software Quality
+                                Assurance, Testing Methodologies, and Software Engineering principles.</p>
+                        </div>
+                        <div class="fade-in">
+                            <h3 class="text-gradient h4 mb-2">Cambridge Advanced Level</h3>
+                            <p class="text-primary fw-bold">Mathematics Stream (Private Candidate)</p>
+                            <p class="text-muted" style="font-size: 14px;">2018 - 2020</p>
+                            <p class="text-secondary mt-3" style="font-size: 14px;">Specialized in Mathematics, Physics,
+                                and IT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Skills Section -->
+        <section id="skills" data-reveal>
+            <div class="container">
+                <div class="glass-card">
+                    <h2 class="h1" style="margin-bottom: 40px;">Technical <span class="text-gradient">Arsenal</span>
                     </h2>
-                    <p class="text-muted lead">Showcasing my experience in testing and IT implementation.</p>
-                </div>
-
-                <!-- 4.2 Work Projects -->
-                <h3 class="h4 text-accent mb-4 border-bottom border-light-subtle pb-2 d-inline-block">Work Projects</h3>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-6">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-body">
-                                <h4 class="card-title h5 text-dark">POS System Migration</h4>
-                                <h6 class="card-subtitle mb-3 text-accent text-opacity-75">Retail Management System</h6>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li><strong>Role:</strong> QA Lead</li>
-                                    <li><strong>Scope:</strong> End-to-end testing of new POS software integration.</li>
-                                    <li><strong>Tools:</strong> Jira, Excel, SQL</li>
-                                </ul>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Languages & Web</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Java</span> <span class="project-tag">Python</span>
+                                <span class="project-tag">PHP</span> <span class="project-tag">SQL</span>
+                                <span class="project-tag">HTML/CSS</span> <span class="project-tag">JavaScript</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-body">
-                                <h4 class="card-title h5 text-dark">Inventory Management Portal</h4>
-                                <h6 class="card-subtitle mb-3 text-accent text-opacity-75">Internal Web App</h6>
-                                <ul class="text-muted small mb-0 ps-3">
-                                    <li><strong>Role:</strong> Manual Tester</li>
-                                    <li><strong>Scope:</strong> Validated inventory workflows and user permissions.</li>
-                                    <li><strong>Tools:</strong> Trello, Chrome DevTools</li>
-                                </ul>
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-secondary);">Automation & Tools</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Selenium</span> <span class="project-tag">RestAssured</span>
+                                <span class="project-tag">JMeter</span> <span class="project-tag">Jira</span>
+                                <span class="project-tag">Git/GitHub</span> <span class="project-tag">Laravel</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- 4.3 Academic Projects -->
-                <h3 class="h4 text-accent mb-4 border-bottom border-light-subtle pb-2 d-inline-block">Academic /
-                    Personal
-                    Projects</h3>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-6">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-body">
-                                <h4 class="card-title h5 text-dark">IT Infrastructure Setup</h4>
-                                <p class="card-text text-muted small">Designed and simulated a secure network
-                                    infrastructure for a small office environment.</p>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <span
-                                        class="badge bg-light text-dark border border-secondary fw-normal font-monospace">Networking</span>
-                                    <span
-                                        class="badge bg-light text-dark border border-secondary fw-normal font-monospace">Cisco
-                                        Packet Tracer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-body">
-                                <h4 class="card-title h5 text-dark">E-Commerce Bug Hunt</h4>
-                                <p class="card-text text-muted small">Performed exploratory testing on an open-source
-                                    e-commerce platform, identifying 20+ valid bugs.</p>
-                                <div class="d-flex gap-2 flex-wrap">
-                                    <span
-                                        class="badge bg-light text-dark border border-secondary fw-normal font-monospace">Manual
-                                        Testing</span>
-                                    <span
-                                        class="badge bg-light text-dark border border-secondary fw-normal font-monospace">Bug
-                                        Reporting</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4.4 QA Sample Work -->
-                <div class="text-center">
-                    <h3 class="h5 text-muted mb-3">QA Sample Deliverables</h3>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#" class="btn btn-sm btn-outline-secondary">View Test Case Sample</a>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">View Bug Report Sample</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- STEP 5: SKILLS & TOOLS SECTION -->
-        <section id="skills" class="py-5 bg-pattern">
-            <div class="container py-5">
-                <h2 class="display-6 fw-bold text-center mb-5 text-dark"><span class="text-gradient">Skills &
-                        Tools</span></h2>
-
-                <div class="row g-4">
-                    <!-- Tech Skills -->
-                    <div class="col-md-4">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-header bg-transparent border-light-subtle border-bottom-0 pt-4">
-                                <h3 class="h5 text-accent mb-0">Technical Skills</h3>
-                            </div>
-                            <div class="card-body pt-0">
-                                <hr class="border-light-subtle mb-3 mt-0">
-                                <ul class="list-unstyled text-dark mb-0">
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>MySQL
-                                    </li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>HTML & CSS</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Git / Version Control
-                                    </li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Basic Python</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testing Knowledge -->
-                    <div class="col-md-4">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-header bg-transparent border-light-subtle border-bottom-0 pt-4">
-                                <h3 class="h5 text-accent mb-0">Testing Expertise</h3>
-                            </div>
-                            <div class="card-body pt-0">
-                                <hr class="border-light-subtle mb-3 mt-0">
-                                <ul class="list-unstyled text-dark mb-0">
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Manual Testing</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Regression Testing
-                                    </li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>User Acceptance
-                                        Testing (UAT)</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>API Testing (Postman)
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="col-md-4">
-                        <div class="card bg-white border border-light-subtle shadow-sm h-100">
-                            <div class="card-header bg-transparent border-light-subtle border-bottom-0 pt-4">
-                                <h3 class="h5 text-accent mb-0">Tools</h3>
-                            </div>
-                            <div class="card-body pt-0">
-                                <hr class="border-light-subtle mb-3 mt-0">
-                                <ul class="list-unstyled text-dark mb-0">
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Jira</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>VS Code</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Chrome DevTools</li>
-                                    <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>MS Office Suite</li>
-                                </ul>
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Methodologies</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Manual Testing</span> <span class="project-tag">UAT</span>
+                                <span class="project-tag">Regression</span> <span class="project-tag">Agile</span>
                             </div>
                         </div>
                     </div>
@@ -321,107 +305,38 @@
             </div>
         </section>
 
-        <!-- STEP 6: EXPERIENCE & EDUCATION (White BG) -->
-        <section id="experience" class="py-5 bg-surface">
-            <div class="container py-5">
-                <div class="row g-5">
-
-                    <!-- Experience -->
-                    <div class="col-lg-6">
-                        <h2 class="display-6 fw-bold mb-4 text-dark">Experience</h2>
-                        <div class="position-relative ps-4 border-start border-light-subtle">
-
-                            <!-- Item 1 -->
-                            <div class="position-relative mb-5">
-                                <span
-                                    class="position-absolute top-0 start-0 translate-middle ms-n4 p-2 bg-accent rounded-circle border border-white"></span>
-                                <h3 class="h5 fw-bold text-dark">IT Support / QA Liaison</h3>
-                                <div class="text-accent small fw-bold mb-2">Tech Solutions Inc. | Jan 2023 - Present
-                                </div>
-                                <ul class="small text-muted ps-3">
-                                    <li>Managed daily POS system operations and troubleshooting.</li>
-                                    <li>Collaborated with developers to report and verify critical bugs.</li>
-                                    <li>Conducted UAT for new feature rollouts.</li>
-                                </ul>
-                            </div>
-
-                            <!-- Item 2 -->
-                            <div class="position-relative">
-                                <span
-                                    class="position-absolute top-0 start-0 translate-middle ms-n4 p-2 bg-accent rounded-circle border border-white"></span>
-                                <h3 class="h5 fw-bold text-dark">Junior Systems Admin</h3>
-                                <div class="text-accent small fw-bold mb-2">Retail Group | Jun 2021 - Dec 2022</div>
-                                <ul class="small text-muted ps-3">
-                                    <li>Supported internal IT infrastructure and network.</li>
-                                    <li>Documented system workflows and user guides.</li>
-                                </ul>
-                            </div>
-
-                        </div>
+        <!-- Contact Section -->
+        <section id="contact" data-reveal>
+            <div class="container">
+                <div class="glass-card" style="text-align: center; border: 1px solid var(--border-accent);">
+                    <h2 class="h1 mb-4">Let's Build Something <span class="text-gradient">Stable</span></h2>
+                    <p class="text-secondary mb-5">Open for collaboration and professional opportunities.</p>
+                    <div
+                        style="display: flex; justify-content: center; gap: 40px; margin-bottom: 40px; flex-wrap: wrap;">
+                        <a href="mailto:ashernoon@gmail.com" style="text-decoration: none; color: var(--text-primary);">
+                            <i class="bi bi-envelope text-accent lead me-2"></i> ashernoon@gmail.com
+                        </a>
+                        <span style="color: var(--text-primary);">
+                            <i class="bi bi-telephone text-accent lead me-2"></i> +94 710 393 856
+                        </span>
+                        <a href="https://linkedin.com/in/ashernoon" target="_blank"
+                            style="text-decoration: none; color: var(--text-primary);">
+                            <i class="bi bi-linkedin text-accent lead me-2"></i> LinkedIn
+                        </a>
                     </div>
-
-                    <!-- Education -->
-                    <div class="col-lg-6">
-                        <h2 class="display-6 fw-bold mb-4 text-dark">Education</h2>
-                        <div class="card bg-white border border-light-subtle shadow-sm p-4">
-                            <h3 class="h5 fw-bold text-dark">Bachelor of Science in Computer Science</h3>
-                            <div class="text-accent small fw-bold">University of Technology | 2017 - 2021</div>
-                            <p class="small text-muted mt-3 mb-0">
-                                Specialized in Software Engineering and Systems Analysis.
-                                Completed capstone project on "Automated Inventory Systems".
-                            </p>
-                        </div>
-                    </div>
-
+                    <a href="mailto:ashernoon@gmail.com" class="btn btn-glow">Start Conversation</a>
                 </div>
             </div>
         </section>
-
-        <!-- STEP 7: CONTACT & FOOTER -->
-        <section id="contact" class="py-5 bg-pattern">
-            <div class="container py-5 text-center">
-                <h2 class="display-6 fw-bold text-dark mb-4">Get in Touch</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="card bg-white border border-light-subtle shadow-sm p-5">
-                            <p class="lead text-dark mb-4">I am currently available for new opportunities in QA and IT
-                                support roles globally.</p>
-
-                            <div class="d-flex justify-content-center flex-wrap gap-4 mb-4">
-                                <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-geo-alt text-accent lead"></i>
-                                    <span class="text-dark">Sri Lanka</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-2">
-                                    <i class="bi bi-envelope text-accent lead"></i>
-                                    <a href="mailto:hello@example.com"
-                                        class="text-dark text-decoration-none hover-accent">hello@example.com</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex justify-content-center gap-3">
-                                <a href="#" class="btn btn-outline-dark"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
-                                <a href="#" class="btn btn-outline-dark"><i class="bi bi-github me-2"></i>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark py-4 border-top border-secondary">
-        <div class="container text-center">
-            <p class="text-light-50 mb-0 small">&copy; 2025 Asher. All rights reserved.</p>
+    <footer style="padding: 40px 0; border-top: 1px solid var(--border-glass); text-align: center;">
+        <div class="container">
+            <p class="text-muted" style="font-size: 13px;">&copy; 2025 Asher Noon Livera. Built with Precision and
+                Passion.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

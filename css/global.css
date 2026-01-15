@@ -1,110 +1,207 @@
-/* Global Styles & Variables */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Global Design System - Premium Dark Tech Theme */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-    /* Color Palette (Premium Tech Theme) */
-    --color-primary: #f8fafc;
-    /* Slate 50 - Very Light Cool Grey */
-    --color-surface: #ffffff;
-    /* White */
-    --color-surface-hover: #f1f5f9;
-    /* Slate 100 */
+    /* Rich Color Palette */
+    --bg-main: #020617;
+    /* Deepest Navy */
+    --bg-accent: #0f172a;
+    /* Slate 900 */
+    --surface: rgba(30, 41, 59, 0.5);
+    /* Glass Surface */
 
-    /* Brand Colors */
-    --color-accent: #4f46e5;
-    /* Indigo 600 - Premium Tech Blue */
-    --color-accent-hover: #4338ca;
-    /* Indigo 700 */
-    --color-secondary: #0ea5e9;
-    /* Sky 500 - Secondary highlight */
+    --accent-primary: #818cf8;
+    /* Indigo 400 */
+    --accent-secondary: #2dd4bf;
+    /* Teal 400 */
+    --accent-glow: rgba(129, 140, 248, 0.4);
 
-    --color-border: #cbd5e1;
-    /* Slate 300 */
-    --color-text-main: #1e293b;
-    /* Slate 800 - Soft Dark */
-    --color-text-muted: #64748b;
-    /* Slate 500 */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
 
-    /* Typography Overrides */
-    --bs-body-font-family: 'Inter', sans-serif;
-    --bs-body-bg: var(--color-primary);
-    --bs-body-color: var(--color-text-main);
+    --border-glass: rgba(255, 255, 255, 0.1);
+    --border-accent: rgba(129, 140, 248, 0.3);
+
+    --radius-xl: 24px;
+    --radius-lg: 16px;
+    --radius-md: 12px;
+
+    --transition-base: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Typography */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
 
-/* Gradient Text Utility */
-.text-gradient {
-    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Base Overrides */
 body {
-    background-color: var(--color-primary);
-    color: var(--color-text-main);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Utilities for Theme Colors */
-.text-accent {
-    color: var(--color-accent) !important;
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
 }
 
-.bg-primary {
-    background-color: var(--color-accent) !important;
+/* Background mesh gradients for depth */
+.mesh-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: radial-gradient(circle at 0% 0%, #1e1b4b 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, #134e4a 0%, transparent 50%);
+    opacity: 0.6;
 }
 
-.bg-surface {
-    background-color: var(--color-surface) !important;
+.glow-spot {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    background: var(--accent-glow);
+    filter: blur(120px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
 }
 
-.bg-dark-subtle {
-    background-color: var(--color-surface) !important;
+/* Scroll Snap Containers */
+section {
+    position: relative;
+    padding: 100px 0;
 }
 
-.btn-primary {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
-    color: #0f172a;
-    /* Dark text on bright button */
-    font-weight: 600;
-    /* Bolder text */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-.btn-primary:hover {
-    background-color: #0ea5e9;
-    /* Sky 500 */
-    border-color: #0ea5e9;
-    color: #fff;
+/* Premium Typography Utilities */
+.text-gradient {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
-.text-light-50 {
-    color: rgba(255, 255, 255, 0.9);
-    /* Increased opacity */
+.ls-wide {
+    letter-spacing: 0.1em;
 }
 
-.hover-accent:hover {
-    color: var(--color-accent) !important;
+.fw-bold {
+    font-weight: 700;
 }
 
-.ls-1 {
-    letter-spacing: 1px;
+.fw-black {
+    font-weight: 800;
 }
 
-/* Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-primary);
+    background: var(--bg-main);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-surface-hover);
-    border-radius: 4px;
+    background: var(--bg-accent);
+    border-radius: 10px;
+    border: 3px solid var(--bg-main);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-accent);
+    background: var(--accent-primary);
+}
+
+/* Layout Utilities */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class*="col-"] {
+    padding: 0 15px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-lg-7 {
+    flex: 0 0 58.333%;
+    max-width: 58.333%;
+}
+
+.col-lg-5 {
+    flex: 0 0 41.666%;
+    max-width: 41.666%;
+}
+
+@media (max-width: 992px) {
+
+    .col-md-4,
+    .col-md-6,
+    .col-lg-7,
+    .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-3 {
+    gap: 16px;
+}
+
+.gap-4 {
+    gap: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 24px;
+}
+
+.mb-5 {
+    margin-bottom: 40px;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
 }

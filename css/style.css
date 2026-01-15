@@ -1,95 +1,241 @@
-/* Component Styles */
+/* Premium Component Styles */
 
-/* Navbar Customization */
-.glass-effect {
-    background-color: rgba(15, 23, 42, 0.95) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-border);
+/* --- Glass Navbar --- */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: var(--transition-base);
 }
 
-.navbar-brand span {
-    color: var(--color-accent);
+.header.scrolled {
+    padding: 12px 0;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--accent-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
 }
 
 .nav-link {
+    color: var(--text-secondary) !important;
+    text-decoration: none;
     font-weight: 500;
-    color: var(--color-text-muted) !important;
-    transition: color 0.2s ease;
+    font-size: 15px;
+    transition: var(--transition-base);
+    position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--color-accent) !important;
+    color: var(--text-primary) !important;
 }
 
-/* --- Hero Section Gradient --- */
-.bg-hero-gradient {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4f46e5 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Abstract shapes for visual interest */
-.bg-hero-gradient::before {
+.nav-link::after {
     content: '';
     position: absolute;
-    top: -20%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-primary);
+    transition: var(--transition-base);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* --- Massive Hero Section --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero-tag {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.hero-p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/* --- Premium Buttons --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 32px;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-base);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-glow {
+    background: var(--accent-primary);
+    color: #fff;
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px var(--accent-glow);
+    background: var(--accent-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--border-glass);
+    color: var(--text-primary);
+}
+
+.btn-outline:hover {
+    background: var(--border-glass);
+    border-color: var(--accent-primary);
+}
+
+/* --- Glass Cards --- */
+.glass-card {
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    transition: var(--transition-base);
+}
+
+.glass-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-10px);
+    background: rgba(30, 41, 59, 0.7);
+}
+
+/* --- Projects Grid --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.project-tag {
+    padding: 4px 12px;
+    background: rgba(129, 140, 248, 0.1);
+    color: var(--accent-primary);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* --- Experience Timeline --- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--border-glass);
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    z-index: 1;
+    background: var(--accent-primary);
+    box-shadow: 0 0 10px var(--accent-primary);
 }
 
-/* --- Subtle Background Pattern for Light Sections --- */
-.bg-pattern {
-    background-color: var(--color-primary);
-    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-    background-size: 24px 24px;
+/* --- Animations --- */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Summary Box */
-.summary-box {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
+[data-reveal].active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* --- Attractive Card Hover --- */
-.hover-lift {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid transparent;
-    /* Prepare for hover accent */
-}
+@media (max-width: 992px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
 
-.hover-lift:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
-    border-color: var(--color-surface-hover) !important;
-    border-top-color: var(--color-accent) !important;
-    /* Top accent on hover */
-}
+    .hero-content {
+        text-align: center;
+    }
 
-/* Timeline Customization (Bootstrap doesn't implement this) */
-.ms-n4 {
-    margin-left: -1.5rem;
-}
+    .hero-p {
+        margin: 0 auto 40px;
+    }
 
-.bg-accent {
-    background-color: var(--color-accent) !important;
-}
-
-/* --- Timeline --- */
-.timeline-dot {
-    width: 1rem;
-    height: 1rem;
-    background: var(--color-accent);
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-
-/* Badge Customization */
-.text-accent-light {
-    color: #bae6fd;
-    /* Sky 200 */
+    .nav-links {
+        display: none;
+    }
 }
