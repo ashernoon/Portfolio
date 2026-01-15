@@ -87,9 +87,9 @@
     }
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         top: 0;
-        right: -100%;
+        left: -100%;
         width: 80%;
         max-width: 400px;
         height: 100vh;
@@ -100,16 +100,15 @@
         align-items: center;
         transition: var(--transition-base);
         z-index: 1050;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.active {
-        right: 0;
+        left: 0;
     }
 
     .nav-link {
-        font-size: 20px;
-        padding: 15px 0;
+        font-size: 18px;
     }
 
     .d-none-mobile {
@@ -141,7 +140,6 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
 }
 
 .hero-grid {
@@ -228,7 +226,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
+    gap: 24px;
 }
 
 @media (max-width: 768px) {
@@ -267,7 +265,7 @@
 .timeline-item {
     padding-left: 40px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .timeline-item::before {
@@ -383,6 +381,10 @@
 
     .glass-card {
         padding: 24px;
+    }
+
+    .section-header {
+        margin-bottom: 20px !important;
     }
 }
 
