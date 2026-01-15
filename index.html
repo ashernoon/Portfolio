@@ -21,16 +21,26 @@
     <header class="header" id="header">
         <div class="container nav">
             <a href="index.html" class="logo">ASHER<span>NOON</span></a>
-            <nav class="nav-links">
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <nav class="nav-links" id="nav-menu">
                 <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Work</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#education" class="nav-link">Education</a>
-                <a href="#projects" class="nav-link">Work</a>
-                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
-            <a href="#contact" class="btn btn-outline" style="padding: 10px 20px; font-size: 14px;">Hire Me</a>
+
+            <a href="#contact" class="btn btn-outline d-none-mobile" style="padding: 10px 20px; font-size: 14px;">Hire
+                Me</a>
         </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-overlay" id="mobile-overlay"></div>
     </header>
 
     <main>
@@ -53,17 +63,14 @@
                             <a href="assets/cv/Asher CV.pdf" class="btn btn-outline" download>Download CV</a>
                         </div>
                     </div>
-                    <!-- Abstract Visual Support -->
                     <div class="hero-visual fade-in" style="animation-delay: 0.4s;">
-                        <div class="glass-card" style="padding: 60px; text-align: center; position: relative;">
-                            <div style="font-size: 80px; filter: drop-shadow(0 0 20px var(--accent-glow));">
-                                <i class="bi bi-shield-check text-gradient"></i>
-                            </div>
-                            <h3 style="margin-top: 20px;">QA Excellence</h3>
-                            <p style="color: var(--text-muted); font-size: 14px;">Manual & Automation Specialist</p>
+                        <div class="glass-card"
+                            style="padding: 10px; text-align: center; position: relative; overflow: hidden; border-radius: 50%; width: 350px; height: 350px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-accent);">
+                            <img src="assets/profilePhoto/profilePhoto.jpg" alt="Asher Noon Livera"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                             <!-- Decorative Circle -->
                             <div
-                                style="position: absolute; width: 100%; height: 100%; top:0; left:0; border: 1px dashed var(--border-accent); border-radius: 50%; transform: scale(1.2); opacity: 0.2;">
+                                style="position: absolute; width: 110%; height: 110%; top:-5%; left:-5%; border: 1px dashed var(--border-accent); border-radius: 50%; animation: rotate 20s linear infinite; opacity: 0.3;">
                             </div>
                         </div>
                     </div>
@@ -95,6 +102,41 @@
                                 style="padding: 20px; border: 1px solid var(--border-glass); border-radius: var(--radius-md);">
                                 <h4 class="text-gradient">Work Experience</h4>
                                 <p class="text-muted" style="font-size: 13px;">Pixzarloop & SLT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Skills Section -->
+        <section id="skills" data-reveal>
+            <div class="container">
+                <div class="glass-card">
+                    <h2 class="h1" style="margin-bottom: 40px;">Technical <span class="text-gradient">Arsenal</span>
+                    </h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Languages & Web</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Java</span> <span class="project-tag">Python</span>
+                                <span class="project-tag">PHP</span> <span class="project-tag">SQL</span>
+                                <span class="project-tag">HTML/CSS</span> <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-secondary);">Automation & Tools</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Selenium</span> <span class="project-tag">RestAssured</span>
+                                <span class="project-tag">JMeter</span> <span class="project-tag">Jira</span>
+                                <span class="project-tag">Git/GitHub</span> <span class="project-tag">Laravel</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Methodologies</h4>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <span class="project-tag">Manual Testing</span> <span class="project-tag">UAT</span>
+                                <span class="project-tag">Regression</span> <span class="project-tag">Agile</span>
                             </div>
                         </div>
                     </div>
@@ -252,7 +294,8 @@
                 <div class="glass-card" style="border: 1px solid var(--border-accent);">
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
                         <div class="fade-in">
-                            <h3 class="text-gradient h4 mb-2">BSc (Hons) in Information Technology Specializing in IT</h3>
+                            <h3 class="text-gradient h4 mb-2">BSc (Hons) in Information Technology Specializing in IT
+                            </h3>
                             <p class="text-primary fw-bold">Sri Lanka Institute of Information Technology</p>
                             <p class="text-muted" style="font-size: 14px;">2021 - 2025</p>
                             <p class="text-secondary mt-3" style="font-size: 14px;">Focused on Software Quality
@@ -264,41 +307,6 @@
                             <p class="text-muted" style="font-size: 14px;">2018 - 2020</p>
                             <p class="text-secondary mt-3" style="font-size: 14px;">Specialized in Mathematics, Physics,
                                 and IT.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dynamic Skills Section -->
-        <section id="skills" data-reveal>
-            <div class="container">
-                <div class="glass-card">
-                    <h2 class="h1" style="margin-bottom: 40px;">Technical <span class="text-gradient">Arsenal</span>
-                    </h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
-                        <div>
-                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Languages & Web</h4>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                <span class="project-tag">Java</span> <span class="project-tag">Python</span>
-                                <span class="project-tag">PHP</span> <span class="project-tag">SQL</span>
-                                <span class="project-tag">HTML/CSS</span> <span class="project-tag">JavaScript</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 style="margin-bottom: 20px; color: var(--accent-secondary);">Automation & Tools</h4>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                <span class="project-tag">Selenium</span> <span class="project-tag">RestAssured</span>
-                                <span class="project-tag">JMeter</span> <span class="project-tag">Jira</span>
-                                <span class="project-tag">Git/GitHub</span> <span class="project-tag">Laravel</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 style="margin-bottom: 20px; color: var(--accent-primary);">Methodologies</h4>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                <span class="project-tag">Manual Testing</span> <span class="project-tag">UAT</span>
-                                <span class="project-tag">Regression</span> <span class="project-tag">Agile</span>
-                            </div>
                         </div>
                     </div>
                 </div>

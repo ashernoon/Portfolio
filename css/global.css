@@ -87,7 +87,13 @@ h4,
 /* Scroll Snap Containers */
 section {
     position: relative;
-    padding: 100px 0;
+    padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
 }
 
 .container {
@@ -175,6 +181,20 @@ section {
     .col-lg-5 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .row {
+        margin: 0 -10px;
+    }
+
+    [class*="col-"] {
+        padding: 0 10px;
     }
 }
 
