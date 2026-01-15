@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Portfolio</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .skills-section {
+            display: grid;
+            gap: var(--spacing-xl);
+        }
+
+        .skill-category-title {
+            font-size: var(--text-2xl);
+            margin-bottom: var(--spacing-md);
+            color: var(--color-text-main);
+            border-bottom: 2px solid var(--color-surface);
+            padding-bottom: var(--spacing-xs);
+            display: inline-block;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .skill-card {
+            background-color: var(--color-surface);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            text-align: center;
+            border: 1px solid var(--color-border);
+            transition: all var(--transition-fast);
+        }
+
+        .skill-card:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-3px);
+            background-color: var(--color-surface-hover);
+        }
+
+        .skill-name {
+            font-weight: 500;
+            color: var(--color-text-main);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Port<span>folio</span>.</a>
+            <button class="nav-toggle" id="nav-toggle">☰</button>
+            <nav class="nav-links" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="skills.html" class="nav-link active">Skills</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="title-lg">Technical Skills</h1>
+                <p class="text-muted" style="margin-bottom: var(--spacing-xl);">Technologies and tools I work with.</p>
+
+                <div class="skills-section">
+
+                    <!-- Frontend -->
+                    <div>
+                        <h2 class="skill-category-title">Frontend Development</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-name">HTML5</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">CSS3</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">React</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">TypeScript</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">Tailwind CSS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div>
+                        <h2 class="skill-category-title">Backend Development</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-name">Node.js</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">Python</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">PostgreSQL</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">MongoDB</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">REST APIs</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div>
+                        <h2 class="skill-category-title">Tools & Others</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-name">Git</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">Docker</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">Figma</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">VS Code</div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-name">AWS</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-text">&copy; 2025 Portfolio. All rights reserved.</p>
+            <div class="flex">
+                <a href="#" class="nav-link">LinkedIn</a>
+                <a href="#" class="nav-link">GitHub</a>
+                <a href="#" class="nav-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
